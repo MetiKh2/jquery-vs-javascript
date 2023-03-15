@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="my-div">
+        <p style="" id="paragraph" class="text">1234</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        //jquery
+        let elem=$('#paragraph');
+        elem=$('p');
+        elem=$('.text');
+        elem=$('p.text');
+        // elem.hide()
+        // elem.show()
+        // elem.css('font-size','35px')
+        // elem.text('Hello Guys')
+        // console.log(elem.text());
+        // elem.html('<p style="color:red;">Hello</p>')
+        // console.log(elem.html());
+        // elem.remove()
+        // console.log(elem.parent().prop('nodeName'));
+        //js
+        let elem2=document.getElementById('paragraph')
+        elem2=document.getElementsByTagName('p')[0]
+        elem2=document.getElementsByClassName('text')[0]
+        elem2=document.querySelectorAll('p.text')[0]
+        // elem2.style.display='none'
+        // elem2.style.display=''
+        elem2.style.fontSize='35px'
+        // elem2.textContent='Hey Guys'
+        // console.log(elem2.textContent);
+        // elem2.innerHTML='<p style="color:red;">Hello</p>'
+        // elem2.remove()
+        console.log(elem2.parentNode.nodeName);
+    </script>
+</body>
+</html>
